@@ -1,18 +1,20 @@
-# Codex History Recovery
+# Codex Desktop Missing Chat History Recovery
 
 修复 Codex Desktop 左侧历史对话、项目对话显示不全的问题。
+
+Fix Codex Desktop missing chat history, hidden project conversations, sidebar history loading, recent-50 window issues, and local `state_5.sqlite` history visibility problems.
 
 如果你遇到 Codex 历史对话“看起来丢了”，项目文件夹里的线程数量明显不对，或者普通对话只显示最近一小部分，可以把这个仓库地址发给 Codex，让它读取仓库并按这里的脚本自行排查和修复：
 
 ```text
-https://github.com/mazhuocheng520-crypto/codex-history-recovery
+https://github.com/mazhuocheng520-crypto/codex-desktop-history-recovery
 ```
 
 你可以直接对 Codex 说：
 
 ```text
 请读取这个 GitHub 仓库：
-https://github.com/mazhuocheng520-crypto/codex-history-recovery
+https://github.com/mazhuocheng520-crypto/codex-desktop-history-recovery
 然后按照里面的 README / scripts / skill，帮我修复 Codex Desktop 历史对话和项目对话显示不全的问题。
 ```
 
@@ -28,7 +30,7 @@ https://github.com/mazhuocheng520-crypto/codex-history-recovery
 
 ```text
 请读取这个 GitHub 仓库：
-https://github.com/mazhuocheng520-crypto/codex-history-recovery
+https://github.com/mazhuocheng520-crypto/codex-desktop-history-recovery
 
 我遇到的问题是：Codex Desktop 左侧历史对话 / 项目对话显示不全。
 
@@ -61,8 +63,25 @@ https://github.com/mazhuocheng520-crypto/codex-history-recovery
 - 本地数据库里还有旧会话，但项目组里看不到
 - Codex 更新后，之前修好的历史侧栏又失效
 - 置顶区、项目区、普通对话区的显示关系变乱
+- 英文搜索里常见的 `Codex Desktop missing chat history`、`project conversations disappeared`、`No chats`、`sidebar hides older conversations`、`recent-50 window`、`state_5.sqlite local data intact`
 
 这个问题最折磨人的地方是：UI 看起来像历史丢了，但实际上数据可能还在。
+
+## 搜索关键词
+
+如果你是通过搜索找到这里，这些关键词描述的是同一类问题：
+
+- Codex Desktop missing chat history
+- Codex Desktop project conversations disappeared
+- Codex Desktop sidebar history missing
+- Codex Desktop project chats show No chats
+- Codex Desktop hides older conversations
+- Codex Desktop recent-50 window
+- Codex Desktop local data intact
+- Codex `state_5.sqlite` threads still exist
+- Codex project history recovery
+- Codex conversation history recovery
+- Codex sidebar full workspace history
 
 ## 核心判断
 
@@ -112,7 +131,7 @@ this.listAllThreads({ modelProviders: null, archived: false })
 最简单的方式不是手动看脚本，而是把仓库地址发给 Codex：
 
 ```text
-https://github.com/mazhuocheng520-crypto/codex-history-recovery
+https://github.com/mazhuocheng520-crypto/codex-desktop-history-recovery
 ```
 
 然后让 Codex 做这几件事：
